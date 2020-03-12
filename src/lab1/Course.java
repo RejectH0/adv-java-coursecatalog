@@ -8,6 +8,11 @@ public abstract class Course {
     public double credits;
     public String prerequisites;
 
+    public Course (String courseName, String courseNumber) {
+        this.setCourseName(courseName);
+        this.setCourseNumber(courseNumber);
+    }
+
     public String getCourseName() {
         return courseName;
     }

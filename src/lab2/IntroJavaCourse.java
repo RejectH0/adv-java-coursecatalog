@@ -1,12 +1,14 @@
 package lab2;
 
+import javax.swing.*;
+
 /**
  * Describe responsibilities here.
  *
  * @author your name goes here
  * @version 1.00
  */
-public class IntroJavaCourse {
+public class IntroJavaCourse implements ICourse {
 
     String courseName;
     private String courseNumber;
@@ -20,6 +22,10 @@ public class IntroJavaCourse {
 
     public String getCourseNumber() {
         return courseNumber;
+    }
+
+    public String getCourseName() {
+        return courseName;
     }
 
     public void setCourseNumber(String courseNumber) {
@@ -36,6 +42,15 @@ public class IntroJavaCourse {
 
     public String getPrerequisites() {
         return prerequisites;
+    }
+
+    public void setCourseName(String courseName) {
+        if (courseName == null || courseName.length() == 0) {
+            JOptionPane.showMessageDialog(null,
+                    "Error: courseName cannot be null of empty string");
+            System.exit(0);
+        }
+        this.courseName = courseName;
     }
 
     public void setPrerequisites(String prerequisites) {

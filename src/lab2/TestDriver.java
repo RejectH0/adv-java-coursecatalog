@@ -1,4 +1,4 @@
-package lab1;
+package lab2;
 
 public class TestDriver {
     public static void main(String[] args) {
@@ -6,13 +6,12 @@ public class TestDriver {
     }
 
     public TestDriver() {
-        Course course1 = new AdvancedJavaCourse("Advanced Java Programming","152-135-20092-20");
-        Course course2 = new IntroJavaCourse("Introduction to Java Programming","152-131-10000-01");
-        Course course3 = new IntroToProgrammingCourse("Introduction to Programming (Including C#)","152-100-50000-05");
+        AdvancedJavaCourse course1 = new AdvancedJavaCourse("Advanced Java Programming","152-135-20092-20");
+        IntroJavaCourse course2 = new IntroJavaCourse("Introduction to Java Programming","152-131-10000-01");
+        IntroToProgrammingCourse course3 = new IntroToProgrammingCourse("Introduction to Programming (Including C#)","152-100-50000-05");
 
         // this is the best way to instanciate, as it clearly shows the superclass (Course) and the sub-class together.
-
-        System.out.println("Package: lab1");
+        System.out.println("Package: lab2");
         System.out.printf("course1.getCourseName(): %s\n",course1.getCourseName());
         System.out.printf("course1.getCourseNumber(): %s\n\n",course1.getCourseNumber());
 
@@ -21,6 +20,5 @@ public class TestDriver {
 
         System.out.printf("course3.getCourseName(): %s\n",course3.getCourseName());
         System.out.printf("course3.getCourseNumber(): %s\n\n",course3.getCourseNumber());
-
     }
 }

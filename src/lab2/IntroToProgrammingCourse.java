@@ -8,11 +8,12 @@ import javax.swing.*;
  * @author your name goes here
  * @version 1.00
  */
-public class IntroToProgrammingCourse {
+public class IntroToProgrammingCourse implements ICourse {
 
     private String courseName;
     private String courseNumber;
     private double credits;
+    private String prerequisites;
 
     public IntroToProgrammingCourse(String courseName, String courseNumber) {
         this.setCourseName(courseName);
@@ -58,4 +59,11 @@ public class IntroToProgrammingCourse {
         this.credits = credits;
     }
 
+    public String getPrerequisites() {
+        return prerequisites;
+    }
+
+    public void setPrerequisites(String prerequisites) {
+        this.prerequisites = prerequisites;
+    }
 }

@@ -9,8 +9,7 @@ package lab1;
 public class IntroJavaCourse extends Course {
 
     public IntroJavaCourse(String courseName, String courseNumber) {
-        this.setCourseName(courseName);
-        this.setCourseNumber(courseNumber);
+       super(courseName,courseNumber);
     }
 
 }

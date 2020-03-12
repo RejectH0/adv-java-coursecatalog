@@ -11,8 +11,7 @@ import javax.swing.*;
 public class AdvancedJavaCourse extends Course {
 
     public AdvancedJavaCourse(String courseName, String courseNumber) {
-        this.setCourseName(courseName);
-        this.setCourseNumber(courseNumber);
+        super(courseName,courseNumber);
     }
 
 }
